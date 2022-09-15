@@ -15,6 +15,7 @@ Sample/Kickstarter Node App to kick start your journey so that you dont waste ti
     - Alpine image for Node 16 
     - Build size of ~275MB
     - Docker file for dev build
+    - Docker file for production build
 - Buildkite
     - Dev environment release pipeline
 - Dotenv for environment vars
