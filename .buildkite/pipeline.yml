@@ -1,0 +1,17 @@
+steps:
+   - name: ":classical_building: Building docker image"
+    command: "docker build -f Dockerfile.dev . -t pratikbhumkar/node-app-template-dev"
+  - wait
+  - name: ":lint-roller: Checking for lints"
+    command: "docker run docker.io/pratikbhumkar/node-app-template-dev npm run lint"
+  - wait
+  - name: ":lint-roller: Testing code"
+    command: "docker run docker.io/pratikbhumkar/node-app-template-dev npm test"
+  - wait
+  - name: ":shipit: Shipping docker image to docker registry"
+    command: "docker push pratikbhumkar/node-app-template"
+  - wait
+  - name: ":surfer: Running image"
+    command: "docker run -p 4000:4000 -d pratikbhumkar/node-app-template"
+  - block: ":rocket: Release to production!"
+# Add step to release to prod here.
