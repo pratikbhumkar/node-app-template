@@ -27,6 +27,4 @@ Sample/Kickstarter Node App to kick start your journey so that you dont waste ti
 - Add release to production details to buildkite for your build pipeline.
 
 ---
-```
 Most importantly, Enjoy :tada: 
-```
