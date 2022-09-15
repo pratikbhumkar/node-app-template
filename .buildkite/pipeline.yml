@@ -10,8 +10,5 @@ steps:
   - wait
   - name: ":shipit: Shipping docker image to docker registry"
     command: "docker push pratikbhumkar/node-app-template"
-  - wait
-  - name: ":surfer: Running image"
-    command: "docker run -p 4000:4000 -d pratikbhumkar/node-app-template"
   - block: ":rocket: Release to production!"
 # Add step to release to prod here.
