@@ -24,3 +24,8 @@ Sample/Kickstarter Node App to kick start your journey so that you dont waste ti
 - Change docker file for your project specific commands.
 - Change default `port` in index.ts as per your requirements.
 - Add release to production details to buildkite for your build pipeline.
+
+---
+```
+Most importantly, Enjoy :tada: 
+```
